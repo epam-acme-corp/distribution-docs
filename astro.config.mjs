@@ -2,7 +2,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-// https://astro.build/config
 export default defineConfig({
   site: 'https://epam-acme-corp.github.io',
   base: '/distribution-docs',
@@ -11,6 +10,9 @@ export default defineConfig({
       title: 'Acme Distribution',
       social: {
         github: 'https://github.com/epam-acme-corp/distribution-docs',
+      },
+      components: {
+        SiteTitle: './src/components/OPCOSelector.astro',
       },
       sidebar: [
         {
