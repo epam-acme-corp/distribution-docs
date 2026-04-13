@@ -9,13 +9,9 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Acme Distribution',
-      social: [
-        {
-          icon: 'github',
-          label: 'GitHub',
-          href: 'https://github.com/epam-acme-corp/distribution-docs',
-        },
-      ],
+      social: {
+        github: 'https://github.com/epam-acme-corp/distribution-docs',
+      },
       sidebar: [
         {
           label: 'Overview',
